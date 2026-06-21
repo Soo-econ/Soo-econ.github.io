@@ -604,39 +604,56 @@ h4,
 
 /* News layout: upcoming badge */
 
-.news-upcoming {
+.news-list li.news-upcoming {
   display: grid;
-  grid-template-columns: 90px auto 1fr;
+  grid-template-columns: 90px max-content 1fr;
   column-gap: 16px;
   align-items: start;
 }
 
-.news-upcoming .tag-upcoming {
+.news-list li.news-upcoming .date {
+  grid-column: 1;
+}
+
+.news-list li.news-upcoming .tag-upcoming {
+  grid-column: 2;
+  width: max-content;
+  justify-self: start;
   margin-right: 0;
 }
 
+.news-list li.news-upcoming .news-text {
+  grid-column: 3;
+}
+
+/* Mobile: date + upcoming on first line, event title below */
 @media only screen and (max-width: 799px) {
-  .news-upcoming {
-    display: grid;
-    grid-template-columns: auto auto;
+  .news-list li.news-upcoming {
+    grid-template-columns: max-content max-content;
     column-gap: 8px;
     row-gap: 2px;
     align-items: center;
   }
 
-  .news-upcoming .date {
+  .news-list li.news-upcoming .date {
     grid-column: 1;
+    grid-row: 1;
     display: inline;
     margin-bottom: 0;
   }
 
-  .news-upcoming .tag-upcoming {
+  .news-list li.news-upcoming .tag-upcoming {
     grid-column: 2;
+    grid-row: 1;
+    display: inline-block;
+    width: max-content;
+    justify-self: start;
     margin-right: 0;
   }
 
-  .news-upcoming .news-text {
+  .news-list li.news-upcoming .news-text {
     grid-column: 1 / -1;
+    grid-row: 2;
     display: block;
   }
 }
