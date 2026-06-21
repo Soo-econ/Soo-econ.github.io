@@ -600,3 +600,43 @@ h4,
 .research-subheading {
   color:  #333333;
 }
+
+
+/* News layout: upcoming badge */
+
+.news-upcoming {
+  display: grid;
+  grid-template-columns: 90px auto 1fr;
+  column-gap: 16px;
+  align-items: start;
+}
+
+.news-upcoming .tag-upcoming {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 799px) {
+  .news-upcoming {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8px;
+    row-gap: 2px;
+    align-items: center;
+  }
+
+  .news-upcoming .date {
+    grid-column: 1;
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  .news-upcoming .tag-upcoming {
+    grid-column: 2;
+    margin-right: 0;
+  }
+
+  .news-upcoming .news-text {
+    grid-column: 1 / -1;
+    display: block;
+  }
+}
