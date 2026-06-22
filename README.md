@@ -10,10 +10,10 @@ If you find this website useful and would like to fork, adapt, or modify it for 
 
 Suggested attribution:
 
-> Adapted from [Soo Jeong Lee's academic website](https://soo-econ.github.io/).
+> Adapted from [Soo Jeong Lee](https://soo-econ.github.io/).
 
 Personal content, including text, CV, photos, research materials, and other personal information, should not be reused without permission.
 
 ## Credits
 
-This website was adapted and modified from [Youngjae Jeong's academic website](https://yjaejeong.github.io/), originally based on [Youngjae Min](https://youngjae-min.github.io/). I also referred to [Jason Blevins](https://jblevins.org/) for some design details.
+This website was adapted and modified from [Youngjae Jeong](https://yjaejeong.github.io/), originally based on [Youngjae Min](https://youngjae-min.github.io/). I also referred to [Jason Blevins](https://jblevins.org/) for some design details.
