@@ -16,5 +16,4 @@ Personal content, including text, CV, photos, research materials, and other pers
 
 ## Credits
 
-This website was adapted and modified from [Youngjae Jeong's academic website](https://yjaejeong.github.io/), originally based on [Youngjae Min's template](https://youngjae-min.github.io/). 
-I also referred to [Jason Blevins](https://jblevins.org/) for some design details.
+This website was adapted and modified from [Youngjae Jeong's academic website](https://yjaejeong.github.io/), originally based on [Youngjae Min](https://youngjae-min.github.io/). I also referred to [Jason Blevins](https://jblevins.org/) for some design details.
