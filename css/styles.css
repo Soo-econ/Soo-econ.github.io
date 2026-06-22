@@ -600,3 +600,8 @@ h4,
 .research-subheading {
   color:  #333333;
 }
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
