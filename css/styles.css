@@ -401,41 +401,89 @@ ul {
   margin-top: 8px;
 }
 
+
+
 /* Photos / Life@ */
 
 .life-subheading {
-  font-size: 20px;
-  margin-top: 28px;
-  margin-bottom: 14px;
-  font-weight: 650;
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
 }
 
-.photo-grid {
+.life-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  margin-top: 14px;
-  margin-bottom: 34px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  column-gap: 0.5rem;  
+  row-gap: 1rem;    
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.photo-item {
+.life-card {
   margin: 0;
 }
 
-.photo-item img {
+.life-card img {
   width: 100%;
-  height: 260px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 8px;
+  object-position: center;
+  border-radius: 1PX;
   display: block;
 }
 
-.photo-item figcaption {
-  margin-top: 8px;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.45;
+.life-card figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
   text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .life-grid {
+    columns: 2 150px;
+    column-gap: 8px;
+  }
+
+  .life-card {
+    margin-bottom: 10px;
+  }
+
+  .life-card figcaption {
+    font-size: 12.5px;
+  }
+}
+
+/* Vertical photos: same format, just shown larger/longer */
+.life-card.tall img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+/* Make selected vertical photos the same height */
+.life-card.portrait img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.life-card.wide {
+  grid-column: 1 / -1;
+}
+
+.life-card.wide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Code */
