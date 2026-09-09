@@ -653,3 +653,11 @@ html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
 }
+
+/* Stata */
+.install-code {
+  display: block;
+  width: fit-content;
+  margin: 8px 0 0 0;
+  padding: 6px 12px;
+}
