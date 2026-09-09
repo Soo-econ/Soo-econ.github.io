@@ -655,9 +655,14 @@ html {
 }
 
 /* Stata */
-.install-code {
-  display: block;
-  width: fit-content;
-  margin: 8px 0 0 0;
-  padding: 6px 12px;
+.install-command {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 8px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.82em;
+  color: #444;
 }
