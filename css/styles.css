@@ -666,3 +666,16 @@ html {
   font-size: 0.82em;
   color: #444;
 }
+
+
+/* related work*/
+
+.paper-note {
+  margin-top: 0.15rem;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.paper-note-en {
+  font-style: italic;
+}
